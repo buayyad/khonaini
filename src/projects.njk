@@ -1,0 +1,45 @@
+---
+layout: base.njk
+pageTitle: Projects
+metaDescription: "Research projects and training programs by Abdullah Al-Khonaini."
+activePage: projects
+permalink: /projects/
+---
+
+<section class="page-header">
+    <div class="container">
+        <h1>Projects</h1>
+    </div>
+</section>
+
+<!-- Research Projects -->
+<section class="section" id="research">
+    <div class="container">
+        <h2 class="section-title">Research</h2>
+        <div class="project-grid">
+            {% for project in projects.research %}
+            <div class="project-card">
+                <h3>{{ project.title }}</h3>
+                <p class="project-date">{{ project.organization }}</p>
+                <p>{{ project.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Training -->
+<section class="section section-alt" id="training">
+    <div class="container">
+        <h2 class="section-title">Training</h2>
+        <div class="project-grid">
+            {% for program in projects.training %}
+            <div class="project-card">
+                <h3>{{ program.title }}</h3>
+                <p class="project-date">{{ program.organization }}</p>
+                <p>{{ program.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

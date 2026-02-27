@@ -1,0 +1,41 @@
+{
+  "research": [
+    {
+      "title": "Empowering Democratic Citizenship through Education",
+      "organization": "London School of Economics · Middle East Centre",
+      "description": "Research Assistant — Exploring Rights-Based Approaches to Educational Policymaking in Kuwait."
+    },
+    {
+      "title": "Governance of Spatial Change: Shaping Urban Policies in Kuwait",
+      "organization": "London School of Economics · Middle East Centre",
+      "description": "Research Assistant — Exploring the Links between Urban Governance and Spatial Development."
+    },
+    {
+      "title": "Neighborhood Tales: Kuwait Under Lockdown",
+      "organization": "En.v",
+      "description": "Research Assistant — A community history initiative examining how residents experienced COVID-19 lockdown conditions in Kuwait, capturing personal narratives through photography and documentation."
+    }
+  ],
+  "training": [
+    {
+      "title": "Aswatna: Educating for Inclusion",
+      "organization": "En.v with Data4Change and CTLR at Gulf University for Science and Technology",
+      "description": "Co-designed and facilitated two rounds of ToT for Aswatna: a participatory bilingual program to empower students and teachers to create social change within their schools by using Participatory Action Research methods (2021-2024)."
+    },
+    {
+      "title": "Enbat: Nurturing Transformational Leadership",
+      "organization": "En.v with BluHat, commissioned by KIPCO as flagship CSR training",
+      "description": "Co-designed and facilitated a ToT for Enbat: an 8 weeks training program for freshly university graduates to cultivate soft skills for work and for life. The program has four modules on: Self, Systems, and Critical Thinking; Cross Cultural Communication; Design Thinking; and Work Culture & Applied Skills (2023-2024)."
+    },
+    {
+      "title": "Build Ideathon",
+      "organization": "En.v with Swiss Agency for Development and Cooperation and Gray Area Collective",
+      "description": "Exploring innovative, user-centric initiatives for vulnerable communities in Kuwait."
+    },
+    {
+      "title": "N-mu: Youth Engagement Program",
+      "organization": "En.v with Eurasia Foundation and International Research and Exchange Board",
+      "description": "Exploring concepts of active citizenship and critical skills to create meaningful impact in communities."
+    }
+  ]
+}

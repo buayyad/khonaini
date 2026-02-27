@@ -1,0 +1,149 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/assets"
+public_folder: "/assets"
+
+collections:
+  # ── Site Settings ──
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "site"
+        label: "General Settings"
+        file: "src/_data/site.json"
+        fields:
+          - { label: "Site Title", name: "title", widget: "string" }
+          - { label: "Site Description", name: "description", widget: "text" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "LinkedIn URL", name: "linkedin", widget: "string" }
+          - { label: "Twitter/X URL", name: "twitter", widget: "string" }
+          - { label: "Formspree Form ID", name: "formspree_id", widget: "string" }
+          - { label: "Copyright Year", name: "copyright_year", widget: "string" }
+
+  # ── About / Home Page ──
+  - name: "about"
+    label: "About Page"
+    files:
+      - name: "about"
+        label: "About Content"
+        file: "src/_data/about.json"
+        fields:
+          - label: "About Paragraphs"
+            name: "paragraphs"
+            widget: "list"
+            field: { label: "Paragraph", name: "paragraph", widget: "text" }
+          - label: "Education Paragraphs"
+            name: "education"
+            widget: "list"
+            field: { label: "Paragraph", name: "paragraph", widget: "text" }
+          - label: "Research Paragraphs"
+            name: "research"
+            widget: "list"
+            field: { label: "Paragraph", name: "paragraph", widget: "text" }
+          - label: "Awards"
+            name: "awards"
+            widget: "list"
+            fields:
+              - { label: "Year", name: "year", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+  # ── Work / Organizations ──
+  - name: "work"
+    label: "Work"
+    files:
+      - name: "work"
+        label: "Organizations"
+        file: "src/_data/work.json"
+        fields:
+          - label: "Organizations"
+            name: "organizations"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Website Link", name: "link", widget: "string", required: false }
+
+  # ── Projects ──
+  - name: "projects"
+    label: "Projects"
+    files:
+      - name: "projects"
+        label: "Research & Training"
+        file: "src/_data/projects.json"
+        fields:
+          - label: "Research Projects"
+            name: "research"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Organization", name: "organization", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - label: "Training Programs"
+            name: "training"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Organization", name: "organization", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+  # ── Publications ──
+  - name: "publications"
+    label: "Publications"
+    files:
+      - name: "publications"
+        label: "All Publications"
+        file: "src/_data/publications.json"
+        fields:
+          - label: "Papers"
+            name: "papers"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Year", name: "year", widget: "string" }
+              - { label: "Details", name: "meta", widget: "string" }
+              - { label: "Link", name: "link", widget: "string", required: false }
+          - label: "Articles"
+            name: "articles"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Year", name: "year", widget: "string" }
+              - { label: "Details", name: "meta", widget: "string" }
+              - { label: "Link", name: "link", widget: "string", required: false }
+          - label: "Case Studies"
+            name: "case_studies"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Year", name: "year", widget: "string" }
+              - { label: "Details", name: "meta", widget: "string" }
+              - { label: "Link", name: "link", widget: "string", required: false }
+          - label: "Book Chapters"
+            name: "book_chapters"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Year", name: "year", widget: "string" }
+              - { label: "Details", name: "meta", widget: "string" }
+              - { label: "Link", name: "link", widget: "string", required: false }
+
+  # ── Media ──
+  - name: "media"
+    label: "Media"
+    files:
+      - name: "media"
+        label: "Media Appearances"
+        file: "src/_data/media.json"
+        fields:
+          - label: "Media Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Year", name: "year", widget: "string" }
+              - { label: "Details (e.g. English · The Guardian)", name: "meta", widget: "string" }

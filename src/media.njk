@@ -1,0 +1,37 @@
+---
+layout: base.njk
+pageTitle: Media
+metaDescription: "Media appearances, interviews, and coverage featuring Abdullah Al-Khonaini."
+activePage: media
+permalink: /media/
+---
+
+<section class="page-header">
+    <div class="container">
+        <h1>Media</h1>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        {% set currentYear = "" %}
+        {% for item in media.items %}
+        {% if item.year != currentYear %}
+        {% if currentYear != "" %}
+                </ul>
+            </div>
+        {% endif %}
+        {% set currentYear = item.year %}
+            <div class="pub-section">
+                <p class="pub-year-label">{{ currentYear }}</p>
+                <ul class="pub-list">
+        {% endif %}
+                    <li class="pub-item">
+                        <h4>{{ item.title }}</h4>
+                        <p class="pub-meta">{{ item.meta }}</p>
+                    </li>
+        {% endfor %}
+                </ul>
+            </div>
+    </div>
+</section>

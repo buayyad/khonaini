@@ -1,0 +1,101 @@
+---
+layout: base.njk
+pageTitle: Publications
+metaDescription: "Academic publications by Abdullah Al-Khonaini - papers, articles, case studies, and book chapters."
+activePage: publications
+permalink: /publications/
+---
+
+<section class="page-header">
+    <div class="container">
+        <h1>Publications</h1>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <!-- Papers -->
+        <div class="pub-section" id="papers">
+            <h3>Papers</h3>
+            {% set currentYear = "" %}
+            {% for paper in publications.papers %}
+            {% if paper.year != currentYear %}
+            {% set currentYear = paper.year %}
+            <p class="pub-year-label">{{ currentYear }}</p>
+            {% endif %}
+            <ul class="pub-list">
+                <li class="pub-item">
+                    <h4>{{ paper.title }}</h4>
+                    <p class="pub-meta">{{ paper.meta }}</p>
+                    {% if paper.link %}
+                    <p class="pub-meta"><a href="{{ paper.link }}" target="_blank" rel="noopener">Read &rarr;</a></p>
+                    {% endif %}
+                </li>
+            </ul>
+            {% endfor %}
+        </div>
+
+        <!-- Articles -->
+        <div class="pub-section" id="articles">
+            <h3>Articles</h3>
+            {% set currentYear = "" %}
+            {% for article in publications.articles %}
+            {% if article.year != currentYear %}
+            {% set currentYear = article.year %}
+            <p class="pub-year-label">{{ currentYear }}</p>
+            {% endif %}
+            <ul class="pub-list">
+                <li class="pub-item">
+                    <h4>{{ article.title }}</h4>
+                    <p class="pub-meta">{{ article.meta }}</p>
+                    {% if article.link %}
+                    <p class="pub-meta"><a href="{{ article.link }}" target="_blank" rel="noopener">Read &rarr;</a></p>
+                    {% endif %}
+                </li>
+            </ul>
+            {% endfor %}
+        </div>
+
+        <!-- Case Studies -->
+        <div class="pub-section" id="case-studies">
+            <h3>Case Studies</h3>
+            {% set currentYear = "" %}
+            {% for study in publications.case_studies %}
+            {% if study.year != currentYear %}
+            {% set currentYear = study.year %}
+            <p class="pub-year-label">{{ currentYear }}</p>
+            {% endif %}
+            <ul class="pub-list">
+                <li class="pub-item">
+                    <h4>{{ study.title }}</h4>
+                    <p class="pub-meta">{{ study.meta }}</p>
+                    {% if study.link %}
+                    <p class="pub-meta"><a href="{{ study.link }}" target="_blank" rel="noopener">Read PDF &rarr;</a></p>
+                    {% endif %}
+                </li>
+            </ul>
+            {% endfor %}
+        </div>
+
+        <!-- Book Chapters -->
+        <div class="pub-section" id="book-chapters">
+            <h3>Book Chapters</h3>
+            {% set currentYear = "" %}
+            {% for chapter in publications.book_chapters %}
+            {% if chapter.year != currentYear %}
+            {% set currentYear = chapter.year %}
+            <p class="pub-year-label">{{ currentYear }}</p>
+            {% endif %}
+            <ul class="pub-list">
+                <li class="pub-item">
+                    <h4>{{ chapter.title }}</h4>
+                    <p class="pub-meta">{{ chapter.meta }}</p>
+                    {% if chapter.link %}
+                    <p class="pub-meta"><a href="{{ chapter.link }}" target="_blank" rel="noopener">Read &rarr;</a></p>
+                    {% endif %}
+                </li>
+            </ul>
+            {% endfor %}
+        </div>
+    </div>
+</section>

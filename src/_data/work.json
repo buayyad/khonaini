@@ -1,0 +1,22 @@
+{
+  "organizations": [
+    {
+      "name": "Raqib50",
+      "role": "Co-founder",
+      "description": "Co-founder of <em>Raqib50</em>, an online parliament watch that holds Kuwaiti parliamentarians accountable by making their voting records and data accessible to the public.",
+      "link": "https://raqib50.com"
+    },
+    {
+      "name": "Siyaaq",
+      "role": "Co-founder",
+      "description": "Co-founder of <em>Siyaaq</em>, an interdisciplinary and socially-driven research and consultancy company by using mixed methods to provide objective and critical research services.",
+      "link": ""
+    },
+    {
+      "name": "en.v",
+      "role": "Research & Policy Advisor",
+      "description": "Research & policy advisor at en.v, a culturally diverse organization focusing on community-building through programs with youth, community leaders, educators, policy makers, and others.",
+      "link": ""
+    }
+  ]
+}
