@@ -2,6 +2,7 @@ backend:
   name: github
   repo: buayyad/khonaini
   branch: main
+  base_url: https://sveltia-cms-auth.YOURSUBDOMAIN.workers.dev
 
 media_folder: "src/assets"
 public_folder: "/assets"
