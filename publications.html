@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Abdullah Al-Khonaini</title>
+    <meta name="description" content="Academic publications, articles, case studies, and book chapters by Abdullah Al-Khonaini.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">A. Al-Khonaini</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publications.html" class="active">Publications</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Publications</h1>
+                <p>Academic papers, articles, case studies, and book chapters.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="pub-section">
+                    <h3>Papers</h3>
+                    <ul class="pub-list">
+                        <li class="pub-item">
+                            <h4>Publication details coming soon</h4>
+                            <p class="pub-meta">This section will be updated with detailed publication information.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pub-section">
+                    <h3>Articles</h3>
+                    <ul class="pub-list">
+                        <li class="pub-item">
+                            <h4>Publication details coming soon</h4>
+                            <p class="pub-meta">This section will be updated with detailed publication information.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pub-section">
+                    <h3>Case Studies</h3>
+                    <ul class="pub-list">
+                        <li class="pub-item">
+                            <h4>Publication details coming soon</h4>
+                            <p class="pub-meta">This section will be updated with detailed publication information.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pub-section">
+                    <h3>Book Chapters</h3>
+                    <ul class="pub-list">
+                        <li class="pub-item">
+                            <h4>Publication details coming soon</h4>
+                            <p class="pub-meta">This section will be updated with detailed publication information.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Abdullah Al-Khonaini. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/abdullah-al-khonaini-740976125/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://www.x.com/khonaini24" target="_blank" rel="noopener">X</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+</html>
