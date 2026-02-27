@@ -1,0 +1,30 @@
+---
+layout: base.njk
+pageTitle: Work
+metaDescription: "Work by Abdullah Al-Khonaini - Raqib50, Siyaaq, and en.v."
+activePage: work
+permalink: /work/
+---
+
+<section class="page-header">
+    <div class="container">
+        <h1>Work</h1>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="project-grid">
+            {% for org in work.organizations %}
+            <div class="project-card">
+                <h3>{{ org.name }}</h3>
+                <p class="project-date">{{ org.role }}</p>
+                <p>{{ org.description | safe }}</p>
+                {% if org.link %}
+                <a href="{{ org.link }}" target="_blank" rel="noopener" class="project-link">Visit {{ org.name }} &rarr;</a>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
