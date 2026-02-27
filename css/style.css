@@ -595,6 +595,125 @@ img {
 }
 
 /* ============================================
+   Dropdown Menus
+   ============================================ */
+.has-dropdown {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    padding: 0.5rem 0;
+    min-width: 180px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    list-style: none;
+    z-index: 100;
+}
+
+.has-dropdown:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+}
+
+.dropdown a::after {
+    display: none;
+}
+
+.dropdown a:hover {
+    background: var(--color-bg-alt);
+    color: var(--color-primary);
+}
+
+/* ============================================
+   Year Labels (Publications/Media)
+   ============================================ */
+.pub-year-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.pub-section .pub-year-label:first-of-type {
+    margin-top: 0;
+}
+
+/* ============================================
+   Contact Form
+   ============================================ */
+.contact-form {
+    margin-top: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 0.35rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.65rem 0.85rem;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    color: var(--color-text);
+    background: var(--color-bg);
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn-submit {
+    display: inline-block;
+    padding: 0.65rem 2rem;
+    background: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn-submit:hover {
+    background: var(--color-primary-light);
+}
+
+/* ============================================
    Footer
    ============================================ */
 .footer {
@@ -667,6 +786,24 @@ img {
 
     .nav-menu li:last-child a {
         border-bottom: none;
+    }
+
+    .has-dropdown:hover .dropdown {
+        display: none;
+    }
+
+    .has-dropdown.open .dropdown {
+        display: block;
+        position: static;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        min-width: auto;
+    }
+
+    .dropdown a {
+        padding: 0.5rem 0 0.5rem 1rem;
+        border-bottom: 1px solid var(--color-border);
     }
 
     .hero {
